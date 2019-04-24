@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <img src="assets/imgs/logo-moon.png" class= "logo-top-bar" />
+    <ion-buttons slot="end">
+      <ion-icon name="notifications" color="light" style="font-size:8vw" (click)="irANotificaciones()">
+      </ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<br>
+    <div class="row">
+      <div class="col-12">
+        <div class="moon-title-primary">
+          <strong>EXCUR</strong>SIONES
+        </div>
+      </div>
+    </div>
+    <div class="linea-divisoria" style="width:90%; margin-left: 5%">
+    </div>
+
+  <ion-grid align-items-center style="padding-left:3vw;padding-right:3vw">
+    <ion-row>
+      <ion-col size="12">
+        <div class="moon-title-primary" style="font-size:5vw; text-align:justify">
+          Todas las excursiones serán acompañadas por el mejor all-inclusive.
+          Las salidas se realizarán en el barco exclusivo de moon partiendo desde el muelle privado del <strong>MOON PALACE</strong>.
+          Los chicos no tendrán que llevar plata a no ser que el coordinador les informe.
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+    <div class="linea-divisoria" style="height:0.15vw;">
+    </div>
+    <div style="padding-top:1.3vw"  *ngFor="let excursion of excursiones">
+      <app-boton-excursiones-fiestas [url_foto]="excursion.url_foto" [titulo]="excursion.titulo" (click)="irAPortadaTexto(excursion.media,excursion.titulo, excursion.descripcion, excursion.mediaType)">
+      </app-boton-excursiones-fiestas>
+      <div class="linea-divisoria" style="height:0.15vw;">
+      </div>
+    </div>
+
+  <br>
+
+  <ion-row align-items-center justify-content-center>
+    <ion-col size="6">
+      <div class="boton-grande-redondo custom-boton" routerLink="/tabs/contacto">
+        <div class="boton-texto">
+          Reserva tu viaje
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <br><br>
+  <ion-row align-items-center justify-content-center>
+    <ion-col size="12" text-center>
+      <ion-text color="azul-oscuro" style="font-weight: lighter !important; letter-spacing: 300">
+        Buscanos en:
+      </ion-text>
+    </ion-col>
+    <ion-col size="4">
+    <ion-img style="width:10vw;float:left" src="assets/imgs/instagram-logo.png" (click)="browser.openUrlPlugin('instagram')"></ion-img>
+    <ion-img style="width:10vw;float:right" src="assets/imgs/facebook-logo.png" (click)="browser.openUrlPlugin('facebook')"></ion-img>
+    </ion-col>
+  </ion-row>
+  <br><br>
+
+</ion-content>

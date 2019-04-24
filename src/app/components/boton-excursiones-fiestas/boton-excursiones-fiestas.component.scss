@@ -1,0 +1,20 @@
+
+.img-wrapper{
+  border-top-right-radius: 5vw;
+  border-bottom-right-radius: 5vw;
+
+  vertical-align: middle;
+  height:100%;
+  width:100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto{
+  color:var(--ion-color-azul-oscuro);
+  position: absolute;
+  font-family: Gill Sans;
+  bottom: 12vw;
+  left: 10vw;
+  font-size: 6vw;
+}

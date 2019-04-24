@@ -1,0 +1,44 @@
+ion-grid {
+  //background-image: linear-gradient(to top, var(--ion-color-primary), var(--ion-color-light)) !important;
+  //background: var(--ion-color-primary) !important;
+}
+
+ion-card{
+  background-color: var(--ion-color-light) !important;
+}
+
+.img-custom {
+  height: 100%; width: 100%; object-fit: contain;
+  zoom:10
+}
+
+.row-custom{
+  padding-left: 30%;
+  width:100%;
+  background: var(--ion-color-primary) !important;
+  height: 15vw;
+  display:table;
+}
+
+.texto-banner-separador{
+  font-size:8vw;
+  color:white;
+  font-weight: lighter;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.custom-boton{
+  border-radius: 2vw;
+  text-align: center;
+  background: linear-gradient(to right, var(--ion-color-primary), var(--ion-color-secondary)) !important;
+  color: white;
+  height: 12vw;
+  vertical-align: middle;
+  display: table;
+}
+
+.boton-texto{
+  display: table-cell;
+  vertical-align: middle;
+}

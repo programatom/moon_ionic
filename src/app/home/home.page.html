@@ -1,0 +1,424 @@
+<ion-header>
+  <ion-toolbar>
+    <img src="assets/imgs/logo-moon.png" class="logo-top-bar" style="position:relative; left:5vw" />
+    <ion-buttons slot="end">
+      <ion-icon name="notifications" color="light" style="font-size:8vw" (click)="irANotificaciones()">
+      </ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-grid no-padding align-items-center>
+    <ion-row>
+      <ion-col size="12" style="padding-top:6vw;padding-bottom:2vw">
+        <div class="moon-title-primary">
+          <strong>MOON</strong>TRAVEL
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <iframe width="100%" height="315" [src]="trustedVideoUrl" frameborder="0" allowfullscreen></iframe>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="5">
+        <div class="linea-divisoria">
+        </div>
+      </ion-col>
+      <ion-col size="2">
+        <div class="moon-subtitle-primary">
+          Faltan:
+        </div>
+      </ion-col>
+      <ion-col size="5">
+        <div class="linea-divisoria">
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row style="padding-left: 4vw; padding-right:4vw;">
+      <ion-col size="3">
+        <ion-row>
+          <ion-col size="12">
+            <div class="number-countdown">
+              {{dias}}
+            </div>
+          </ion-col>
+          <ion-col size="12">
+            <div class="text-countdown">
+              <strong>DÍAS</strong>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col size="3">
+        <ion-row>
+          <ion-col size="12">
+            <div class="number-countdown">
+              {{horas}}
+            </div>
+          </ion-col>
+          <ion-col size="12">
+            <div class="text-countdown">
+              <strong>HORAS</strong>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col size="3">
+        <ion-row>
+          <ion-col size="12">
+            <div class="number-countdown">
+              {{minutos}}
+            </div>
+          </ion-col>
+          <ion-col size="12">
+            <div class="text-countdown">
+              <strong>MINUTOS</strong>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col size="3">
+        <ion-row>
+          <ion-col size="12">
+            <div class="number-countdown">
+              {{segundos}}
+            </div>
+          </ion-col>
+          <ion-col size="12">
+            <div class="text-countdown">
+              <strong>SEGUNDOS</strong>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3">
+        <div class="linea-divisoria">
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="moon-subtitle-primary">
+          Para el viaje de tu vida
+        </div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="linea-divisoria">
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6" class="cols-ppales">
+        <div class="portada-1">
+          <img src="assets/imgs/logo-moon.png" class="logo-moon">
+          <ion-row no-padding>
+            <ion-col size="12" style="margin-bottom:1vw">
+              <div class="texto-moon-cancun">
+                <strong>MOON</strong>CanCún
+              </div>
+            </ion-col>
+            <ion-col size="12">
+              <ion-icon name="ios-globe" color="light" class="icono-globe">
+              </ion-icon>
+            </ion-col>
+          </ion-row>
+        </div>
+
+      </ion-col>
+      <ion-col size="6" class="cols-ppales">
+        <div class="portada-2">
+          <img src="assets/imgs/home/moon-ski-logo.png" class="logo-ski">
+          <ion-row no-padding>
+            <ion-col size="12">
+              <img src="assets/imgs/home/moonski.png" class="texto-moon-ski">
+            </ion-col>
+            <ion-col size="12">
+              <ion-icon name="ios-globe" color="light" class="icono-globe">
+              </ion-icon>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" class="col-secundaria">
+        <div class="portada-3">
+          <ion-row>
+            <ion-col size="12">
+              <img src="assets/imgs/home/moonsports.png" class="logo-moon-sports">
+            </ion-col>
+            <ion-col size="12">
+              <ion-icon name="ios-globe" color="light" class="icono-globe-sports">
+              </ion-icon>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <br>
+
+  <ion-row text-center>
+    <ion-col size="4" text-center>
+      <div class="linea-divisoria">
+      </div>
+    </ion-col>
+    <ion-col size="4" text-center>
+      <div class="moon-subtitle-primary">
+        Nosotros
+      </div>
+    </ion-col>
+    <ion-col size="4" text-center>
+      <div class="linea-divisoria">
+      </div>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-card>
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="12">
+          <ion-card-title color="dark" style="font-size:5vw">
+            Somos la empresa con mas experiencia en viajes al exterior
+          </ion-card-title>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="2" class="row-card icono-inicial-bullet-card">
+          <ion-icon src="assets/iconos/circular-shape-silhouette.svg" color="secondary"></ion-icon>
+        </ion-col>
+        <ion-col size="7" class="texto-bullet-card row-card">
+          Más de 23 años de experiencia
+        </ion-col>
+        <ion-col size="3" class="icono-bullet-card row-card">
+          <ion-icon name="heart"></ion-icon>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="2" class="row-card icono-inicial-bullet-card">
+          <ion-icon src="assets/iconos/circular-shape-silhouette.svg" color="secondary"></ion-icon>
+        </ion-col>
+        <ion-col size="7" class="texto-bullet-card row-card">
+          Más de 80.000 esquiadores
+        </ion-col>
+        <ion-col size="3" class="icono-bullet-card row-card">
+          <ion-icon src="assets/iconos/skier-going-down-a-hill.svg"></ion-icon>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="2" class="row-card icono-inicial-bullet-card">
+          <ion-icon src="assets/iconos/circular-shape-silhouette.svg" color="secondary"></ion-icon>
+        </ion-col>
+        <ion-col size="7" class="texto-bullet-card row-card">
+          Más de 1000 viajes de egresados
+        </ion-col>
+        <ion-col size="3" class="icono-bullet-card row-card">
+          <ion-icon src="assets/iconos/airplane.svg"></ion-icon>
+          <ion-icon src="assets/iconos/earth.svg"></ion-icon>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="2" class="row-card icono-inicial-bullet-card">
+          <ion-icon src="assets/iconos/circular-shape-silhouette.svg" color="secondary"></ion-icon>
+        </ion-col>
+        <ion-col size="7" class="texto-bullet-card row-card">
+          Más de 180.000 pasajeros transportados
+        </ion-col>
+        <ion-col size="3" class="icono-bullet-card row-card">
+          <ion-icon name="contacts"></ion-icon>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="2" class="row-card icono-inicial-bullet-card">
+          <ion-icon src="assets/iconos/circular-shape-silhouette.svg" color="secondary"></ion-icon>
+        </ion-col>
+        <ion-col size="7" class="texto-bullet-card row-card">
+          Más de 100 giras de rugby y hockey
+        </ion-col>
+        <ion-col size="3" class="icono-bullet-card row-card">
+          <ion-icon src="assets/iconos/american-football-ball.svg"></ion-icon>
+          <ion-icon src="assets/iconos/hockey-sticks.svg"></ion-icon>
+        </ion-col>
+      </ion-row>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-row align-items-center justify-content-center>
+    <ion-col size="6">
+      <div class="boton-grande-redondo custom-boton" (click)="modalColegios()">
+        <div class="boton-texto">
+          Ver colegios que confiaron en nosotros
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <br>
+
+  <ion-row>
+    <ion-col size="12">
+      <div class="linea-divisoria" >
+      </div>
+    </ion-col>
+  </ion-row>
+
+
+  <br>
+  <ion-row align-items-center justify-content-center>
+    <ion-col size="6">
+      <div class="boton-grande-redondo custom-boton" routerLink="/tabs/contacto">
+        <div class="boton-texto">
+          Reserva tu viaje
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <br>
+  <ion-row>
+    <ion-col size="12">
+      <div class="linea-divisoria" >
+      </div>
+    </ion-col>
+  </ion-row>
+  <br>
+
+  <ion-row>
+    <ion-col size="12">
+      <video width="100%" src="assets/videos/big_buck_bunny.mp4" poster="assets/imgs/logo-login.png" controls>
+      </video>
+    </ion-col>
+  </ion-row>
+  <br>
+  <ion-row>
+    <ion-col size="12">
+      <div class="linea-divisoria" >
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <br>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" style="font-size:10vw" class="titulo-card">
+        <strong>Testimonios</strong>
+      </ion-col>
+    </ion-row>
+    <ion-slides pager = "true">
+      <ion-slide>
+        <ion-card>
+          <ion-row>
+            <ion-col size="3">
+              <ion-row>
+                <ion-col size="12">
+                  <ion-avatar style="text-align:center">
+                    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                  </ion-avatar>
+                </ion-col>
+                <ion-col size="12" style="font-size:3.5vw; text-align:center" class="texto-bullet-card">
+                  Juan Perez
+                </ion-col>
+              </ion-row>
+            </ion-col>
+            <ion-col size="9" class="texto-bullet-card" style="font-size:3vw">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum, velit ut scelerisque vulputate, magna odio mollis arcu, a aliquet eros risus a neque. Mauris sodales velit sed dolor pretium, a ultricies enim sollicitudin. Nulla
+              laoreet aliquam nisl at pulvinar. Nullam sodales eros leo.
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="6" class="texto-bullet-card" style="font-size:4vw; text-align:center">
+              Colegio Los Robles
+            </ion-col>
+            <ion-col size="6" class="texto-bullet-card" style="font-size:4vw; text-align:center">
+              Año de viaje 2018
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <ion-row>
+            <ion-col size="3">
+              <ion-row>
+                <ion-col size="12">
+                  <ion-avatar style="text-align:center">
+                    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                  </ion-avatar>
+                </ion-col>
+                <ion-col size="12" style="font-size:3.5vw; text-align:center" class="texto-bullet-card">
+                  Juan Perez
+                </ion-col>
+              </ion-row>
+            </ion-col>
+            <ion-col size="9" class="texto-bullet-card" style="font-size:3vw">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum, velit ut scelerisque vulputate, magna odio mollis arcu, a aliquet eros risus a neque. Mauris sodales velit sed dolor pretium, a ultricies enim sollicitudin. Nulla
+              laoreet aliquam nisl at pulvinar. Nullam sodales eros leo.
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="6" class="texto-bullet-card" style="font-size:4vw; text-align:center">
+              Colegio Los Robles
+            </ion-col>
+            <ion-col size="6" class="texto-bullet-card" style="font-size:4vw; text-align:center">
+              Año de viaje 2018
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <ion-row>
+            <ion-col size="3">
+              <ion-row>
+                <ion-col size="12">
+                  <ion-avatar style="text-align:center">
+                    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                  </ion-avatar>
+                </ion-col>
+                <ion-col size="12" style="font-size:3.5vw; text-align:center" class="texto-bullet-card">
+                  Juan Perez
+                </ion-col>
+              </ion-row>
+            </ion-col>
+            <ion-col size="9" class="texto-bullet-card" style="font-size:3vw">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum, velit ut scelerisque vulputate, magna odio mollis arcu, a aliquet eros risus a neque. Mauris sodales velit sed dolor pretium, a ultricies enim sollicitudin. Nulla
+              laoreet aliquam nisl at pulvinar. Nullam sodales eros leo.
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="6" class="texto-bullet-card" style="font-size:4vw; text-align:center">
+              Colegio Los Robles
+            </ion-col>
+            <ion-col size="6" class="texto-bullet-card" style="font-size:4vw; text-align:center">
+              Año de viaje 2018
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-slide>
+
+    </ion-slides>
+    <br>
+
+  </ion-grid>
+
+
+  <br>
+  <ion-row align-items-center justify-content-center>
+    <ion-col size="12" text-center>
+      <ion-text color="azul-oscuro" style="font-weight: lighter !important; letter-spacing: 300">
+        Buscanos en:
+      </ion-text>
+    </ion-col>
+    <ion-col size="4">
+      <ion-img style="width:10vw;float:left" src="assets/imgs/instagram-logo.png" (click)="browser.openUrlPlugin('instagram')"></ion-img>
+      <ion-img style="width:10vw;float:right" src="assets/imgs/facebook-logo.png" (click)="browser.openUrlPlugin('facebook')"></ion-img>
+    </ion-col>
+  </ion-row>
+
+  <br><br>
+
+</ion-content>

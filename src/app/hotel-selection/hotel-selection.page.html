@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <img src="assets/imgs/logo-moon.png" class= "logo-top-bar" />
+    <ion-buttons slot="end">
+      <ion-icon name="notifications" color="light" style="font-size:8vw" (click)="irANotificaciones()">
+      </ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding scrollY="false">
+  <div class="button-container">
+    <div class="logo-container top" (click)="switchNav('palace')">
+      <img src="assets/imgs/hotel/moon-palace-logo.png" class="imagen-logo-moon">
+    </div>
+    <div class="logo-container bottom" (click)="switchNav('oasis')">
+      <img src="assets/imgs/hotel/grand-oasis-logo.png" class="imagen-logo-oasis">
+    </div>
+  </div>
+  <div class="gifs-container">
+    <div class="gif" style="margin-bottom: 0.5vw">
+    </div>
+    <div class="gif-oasis">
+    </div>
+  </div>
+
+<!--
+<ion-grid>
+  <ion-row>
+    <ion-col size="12">
+      <div class="boton-grande-redondo custom-boton" routerLink="/moon-palace">
+        <div class="boton-texto">
+          MOON PALACE
+        </div>
+      </div>
+    </ion-col>
+    <ion-col size="12">
+      <div class="boton-grande-redondo custom-boton" routerLink="/oasis">
+        <div class="boton-texto">
+          OASIS
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+-->
+</ion-content>

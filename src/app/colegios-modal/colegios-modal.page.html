@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="light">Ellos ya confiaron en nosotros</ion-title>
+    <ion-buttons slot="start">
+      <ion-icon name="arrow-back" color="light" (click)="dismissModal()" style="font-size:8vw">
+      </ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card *ngFor="let ano of colegiosViajesArray">
+    <ion-card-header text-center>
+      <ion-card-title>{{ano["ano"]}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content text-center>
+      <div class="viaje-colegios" *ngFor="let viaje of ano.viajes">
+        <div class="titulo-viaje">
+          <strong>
+            {{viaje.lugar}}
+          </strong>
+        </div>
+        <br>
+        <div class="colegios-text" *ngFor="let colegio of viaje.colegios">
+          {{colegio}}
+        </div>
+        <br>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

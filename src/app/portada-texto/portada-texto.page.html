@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <img src="assets/imgs/logo-moon.png" style="text-align: center;" height="40vw"/>
+    <ion-buttons slot="start">
+      <ion-button (click)="dismiss()" style="position: absolute">
+        <ion-icon style="font-size:12vw;" color="light" name="arrow-round-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <h2 style="text-align:center">{{portadaServ.titulo}}</h2>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <ion-row no-padding>
+    <ion-col size="12" no-padding>
+      <ion-img [src]="portadaServ.media" *ngIf="portadaServ.mediaType == 'image'">
+      </ion-img>
+      <iframe width="100%" height="315" [src]="trustedVideoUrl" frameborder="0" allowfullscreen *ngIf="portadaServ.mediaType == 'video'"></iframe>
+    </ion-col>
+  </ion-row>
+  <ion-grid>
+    <ion-row align-items-center>
+      <ion-col size="12" >
+        <ion-card style="text-align:justify">
+          <ion-card-content>
+            <ion-text style="font-size:4vw">
+              {{portadaServ.descripcion}}
+            </ion-text>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,89 @@
+
+<div class="splashScreen" *ngIf="showSplash">
+  <div class="loader">
+
+  </div>
+</div>
+<ion-content padding scrollY="false">
+  <ion-grid>
+    <ion-row justify-content-center>
+    <img [@resize]="keyboardShow ? 'small' : 'normal'" style="margin-top:10vw" src="assets/imgs/logo-moon.png" class="imagen-grande">
+    </ion-row>
+
+    <ion-row justify-content-center>
+      <ion-col size="12" text-center class="input-container">
+        <ion-item>
+          <ion-label position="fixed" color="primary">
+            Email*
+          </ion-label>
+          <ion-input type="email" [(ngModel)]="dataRegister.email">
+
+          </ion-input>
+        </ion-item>
+      </ion-col>
+      <!--
+      <div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container" (click)="toggle()">
+        <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+      </div>
+    -->
+      <ion-col size="12" text-center class="input-container">
+        <ion-item>
+          <ion-label position="fixed" color="primary">
+            Nombre*
+          </ion-label>
+          <ion-input type="email" [(ngModel)]="dataRegister.name">
+          </ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="12" text-center class="input-container">
+        <ion-item>
+          <ion-label position="fixed" color="primary">
+            Colegio
+          </ion-label>
+          <ion-input type="email" [(ngModel)]="colegio">
+          </ion-input>
+        </ion-item>
+      </ion-col>
+      <br><br><br>
+      <ion-col size="12" text-center class="button-container">
+        <ion-button expand="block" (click)="switchRegister('email')" color="primary">
+          <ion-icon slot="start" name="mail" color="light"></ion-icon>
+          <ion-text color="light">
+            Ingresar con email
+          </ion-text>
+        </ion-button>
+      </ion-col>
+
+      <ion-col size="12" text-center class="button-container">
+        <ion-button expand="block" (click)="switchRegister('google')" color="google">
+          <ion-icon slot="start" name="logo-google" color="light"></ion-icon>
+          <ion-text color="light">
+            Ingresar con google
+          </ion-text>
+        </ion-button>
+      </ion-col>
+
+
+      <!--
+      <ion-col size="12" text-center class="button-container">
+        <ion-button expand="block" (click)="switchRegister('facebook')" color="facebook">
+          <ion-icon slot="start" name="logo-facebook" color="light"></ion-icon>
+          <ion-text color="light">
+            Ingresar con facebook
+          </ion-text>
+        </ion-button>
+      </ion-col>
+      -->
+      <ion-col size="12" text-center class="button-container">
+        <ion-icon name="ios-arrow-dropleft" color="primary" style="font-size:12vw;" (click)="dismiss()">
+        </ion-icon>
+      </ion-col>
+
+
+
+
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

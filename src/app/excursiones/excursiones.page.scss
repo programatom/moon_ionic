@@ -1,0 +1,63 @@
+.division-boton-grande-redondo-imagen-1 {
+  height: 100%;
+  width: 40%;
+  align-self: flex-start;
+  background: url("../../assets/imgs/excursiones/excursiones-isla-mujeres.jpg") no-repeat 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-custom{
+  position: absolute;
+  bottom: 11vw;
+  left: 10vw;
+}
+
+ion-col{
+  padding:0;
+}
+
+.division-boton-grande-redondo-imagen-2 {
+  height: 100%;
+  width: 40%;
+  align-self: flex-start;
+  background: url("../../assets/imgs/excursiones/excursiones-jungle.jpeg") no-repeat 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.division-boton-grande-redondo-imagen-3 {
+  height: 100%;
+  width: 40%;
+  align-self: flex-start;
+  background: url("../../assets/imgs/excursiones/excursiones-VENTURA-TIROLESA.jpg") no-repeat 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.division-boton-grande-redondo-imagen-4 {
+  height: 100%;
+  width: 40%;
+  align-self: flex-start;
+  background: url("../../assets/imgs/excursiones/otros.jpeg") no-repeat 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.custom-boton{
+  border-radius: 2vw;
+  text-align: center;
+  background: linear-gradient(to right, var(--ion-color-primary), var(--ion-color-secondary)) !important;
+  color: white;
+  height: 12vw;
+  display: table;
+}
+
+.boton-texto{
+  display: table-cell;
+  vertical-align: middle;
+}

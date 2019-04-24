@@ -1,0 +1,123 @@
+<ion-header>
+  <ion-toolbar>
+    <img src="assets/imgs/logo-moon.png" class= "logo-top-bar" />
+    <ion-buttons slot="end">
+      <ion-icon name="notifications" color="light" style="font-size:8vw" (click)="irANotificaciones()">
+      </ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid style="padding-top:7vw; padding-bottom:4vw">
+    <ion-row>
+      <ion-col size="6" offset="3">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12">
+              <ion-icon name="logo-whatsapp" class="logo-whatsapp" (click)="irAWhatsapp()"></ion-icon>
+            </ion-col>
+            <ion-col size="12">
+              <div class="text">
+                Contactanos por whatsapp
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+
+      <ion-col size="12">
+        <ion-item>
+          <ion-label color="medium" position="floating">
+            Nombre y apellido
+          </ion-label>
+          <ion-input color="medium" [(ngModel)]="nombre">
+          </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+
+      <ion-col size="12">
+        <ion-item>
+          <ion-label color="medium" position="floating">
+            E-mail
+          </ion-label>
+          <ion-input color="medium" [(ngModel)]="email"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+
+      <ion-col size="12">
+        <ion-item>
+          <ion-label color="medium" position="floating">
+            Numero
+          </ion-label>
+          <ion-input color="medium" [(ngModel)]="numero"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label color="medium" position="floating">
+            Comentario
+          </ion-label>
+          <ion-input color="medium" [(ngModel)]="comentario"></ion-input>
+        </ion-item>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+  <ion-row align-items-center justify-content-center>
+    <ion-col size="6">
+      <div class="boton-grande-redondo custom-boton" (click)="enviarEmail()">
+        <div class="boton-texto">
+          Enviar
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <br><br>
+  <ion-row align-items-center justify-content-center>
+    <ion-col size="12" text-center>
+      <ion-text color="azul-oscuro" style="font-weight: lighter !important; letter-spacing: 300">
+        Buscanos en:
+      </ion-text>
+    </ion-col>
+    <ion-col size="4">
+      <ion-img style="width:10vw;float:left" src="assets/imgs/instagram-logo.png" (click)="browser.openUrlPlugin('instagram')"></ion-img>
+      <ion-img style="width:10vw;float:right" src="assets/imgs/facebook-logo.png" (click)="browser.openUrlPlugin('facebook')"></ion-img>
+    </ion-col>
+  </ion-row>
+
+  <br><br>
+
+  <ion-row align-items-center justify-content-center>
+    <ion-col size="12">
+      <ion-text color="azul-oscuro" style="font-weight: lighter !important; letter-spacing: 300">
+        Medios de pago:
+      </ion-text>
+    </ion-col>
+    <ion-col size="4">
+      <ion-img style="width:18vw; margin: auto" src="assets/imgs/galicia-logo.png"></ion-img>
+    </ion-col>
+    <ion-col size="4">
+      <ion-img style="width:18vw; margin: auto" src="assets/imgs/mercado-pago-logo.jpg"></ion-img>
+    </ion-col>
+    <ion-col size="4">
+      <ion-img style="width:18vw; margin: auto" src="assets/imgs/santander-logo.png"></ion-img>
+    </ion-col>
+
+  </ion-row>
+
+
+</ion-content>

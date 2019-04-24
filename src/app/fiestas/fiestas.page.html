@@ -1,0 +1,200 @@
+<ion-header>
+  <ion-toolbar>
+    <img src="assets/imgs/logo-moon.png" class= "logo-top-bar" />
+    <ion-buttons slot="end">
+      <ion-icon name="notifications" color="light" style="font-size:8vw" (click)="irANotificaciones()">
+      </ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <br>
+
+  <div class="row">
+    <div class="col-12">
+      <ion-img src="assets/imgs/fiestas/moon-exclusive.png">
+
+      </ion-img>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="moon-title-primary">
+        <strong>Temá</strong>ticas
+      </div>
+    </div>
+  </div>
+
+  <div class="linea-divisoria" style="width:90%; margin-left: 5%">
+  </div>
+  <br>
+
+
+
+
+  <ion-grid align-items-center>
+    <ion-row>
+      <ion-col size="12">
+        <ion-img src="assets/imgs/foto-dj.jpg">
+        </ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div style="padding-top:1.3vw"  *ngFor="let fiesta of fiestas">
+    <app-boton-excursiones-fiestas [url_foto]="fiesta.url_foto" [titulo]="fiesta.titulo" (click)="irAPortadaTexto(fiesta.media,fiesta.titulo,fiesta.descripcion,fiesta.mediaType)">
+    </app-boton-excursiones-fiestas>
+    <div class="linea-divisoria" style="height:0.15vw;">
+    </div>
+  </div>
+
+<!--
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col size="12">
+        <div class="boton-grande-redondo-sin-active" (click)="irAPortadaTexto('../../assets/imgs/fiestas/a-man-has-no-costume.jpg', 'A man has no costume')">
+          <div class="division-boton-grande-redondo-imagen-1">
+            <ion-text class="text-custom">
+              <div class="texto-boton-grande-redondo">
+                <h2>A man has no costume</h2>
+              </div>
+            </ion-text>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size="12">
+        <div class="boton-grande-redondo-sin-active" (click)="irAPortadaTexto('../../assets/imgs/fiestas/coco-bongo.jpg', 'Coco bongo')">
+          <div class="division-boton-grande-redondo-imagen-2">
+            <ion-text class="text-custom">
+              <div class="texto-boton-grande-redondo">
+                <h2>Coco bongo</h2>
+              </div>
+            </ion-text>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size="12">
+        <div class="boton-grande-redondo-sin-active" (click)="irAPortadaTexto('../../assets/imgs/fiestas/cool-by-the-pool.jpg', 'Cool by the pool')">
+          <div class="division-boton-grande-redondo-imagen-3">
+            <ion-text class="text-custom">
+              <div class="texto-boton-grande-redondo">
+                <h2>Cool by the pool</h2>
+              </div>
+            </ion-text>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size="12">
+        <div class="boton-grande-redondo-sin-active" (click)="irAPortadaTexto('../../assets/imgs/fiestas/dark-knight.jpg', 'Dark knight')">
+          <div class="division-boton-grande-redondo-imagen-4">
+            <ion-text class="text-custom">
+              <div class="texto-boton-grande-redondo">
+                <h2>Dark knight</h2>
+              </div>
+            </ion-text>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size="12">
+        <div class="boton-grande-redondo-sin-active" (click)="irAPortadaTexto('../../assets/imgs/fiestas/fluo-imagination.jpg', 'Fluo imagination')">
+          <div class="division-boton-grande-redondo-imagen-5">
+            <ion-text class="text-custom">
+              <div class="texto-boton-grande-redondo">
+                <h2>Fluo imagination</h2>
+              </div>
+            </ion-text>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size="12">
+        <div class="boton-grande-redondo-sin-active" (click)="irAPortadaTexto('../../assets/imgs/fiestas/into-the-foam.jpg', 'Into the foam')">
+          <div class="division-boton-grande-redondo-imagen-6">
+            <ion-text class="text-custom">
+              <div class="texto-boton-grande-redondo">
+                <h2>Into the foam</h2>
+              </div>
+            </ion-text>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size="12">
+        <div class="boton-grande-redondo-sin-active" (click)="irAPortadaTexto('../../assets/imgs/fiestas/moon-colors.jpg', 'Moon colors')">
+          <div class="division-boton-grande-redondo-imagen-7">
+            <ion-text class="text-custom">
+              <div class="texto-boton-grande-redondo">
+                <h2>Moon colors</h2>
+              </div>
+            </ion-text>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size="12">
+        <div class="boton-grande-redondo-sin-active" (click)="irAPortadaTexto('../../assets/imgs/fiestas/traffic-light-party.jpg', 'Traffic light party')">
+          <div class="division-boton-grande-redondo-imagen-8">
+            <ion-text class="text-custom">
+              <div class="texto-boton-grande-redondo">
+                <h2>Traffic light party</h2>
+              </div>
+            </ion-text>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size="12">
+        <div class="boton-grande-redondo-sin-active" (click)="irAPortadaTexto('../../assets/imgs/fiestas/white-party.jpg','White party')">
+          <div class="division-boton-grande-redondo-imagen-9">
+            <ion-text class="text-custom">
+              <div class="texto-boton-grande-redondo">
+                <h2>White party</h2>
+              </div>
+            </ion-text>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  -->
+  <br>
+
+  <ion-row align-items-center justify-content-center>
+    <ion-col size="6">
+      <div class="boton-grande-redondo custom-boton" routerLink="/tabs/contacto">
+        <div class="boton-texto">
+          Reserva tu viaje
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <br><br>
+  <ion-row align-items-center justify-content-center>
+    <ion-col size="12" text-center>
+      <ion-text color="azul-oscuro" style="font-weight: lighter !important; letter-spacing: 300">
+        Buscanos en:
+      </ion-text>
+    </ion-col>
+    <ion-col size="4">
+      <ion-img style="width:10vw;float:left" src="assets/imgs/instagram-logo.png" (click)="browser.openUrlPlugin('instagram')"></ion-img>
+      <ion-img style="width:10vw;float:right" src="assets/imgs/facebook-logo.png" (click)="browser.openUrlPlugin('facebook')"></ion-img>
+    </ion-col>
+  </ion-row>
+  <br><br>
+
+</ion-content>
