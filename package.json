@@ -23,7 +23,7 @@
     "@angular/router": "^7.2.2",
     "@ionic-native/core": "^5.0.0",
     "@ionic-native/email-composer": "^5.4.0",
-    "@ionic-native/google-plus": "^5.4.0",
+    "@ionic-native/google-plus": "^5.5.0",
     "@ionic-native/in-app-browser": "^5.3.0",
     "@ionic-native/keyboard": "^5.4.0",
     "@ionic-native/splash-screen": "^5.0.0",
@@ -32,7 +32,7 @@
     "@ionic/storage": "^2.2.0",
     "angularfire2": "^5.1.2",
     "cordova-android": "7.1.4",
-    "cordova-ios": "4.5.5",
+    "cordova-ios": "5.0.1",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-email-composer": "0.9.2",
     "cordova-plugin-googleplus": "7.0.1",
@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@angular-devkit/architect": "~0.12.3",
-    "@angular-devkit/build-angular": "~0.12.3",
+    "@angular-devkit/build-angular": "^0.13.8",
     "@angular-devkit/core": "~7.2.3",
     "@angular-devkit/schematics": "~7.2.3",
     "@angular/cli": "~7.2.3",
@@ -62,9 +62,10 @@
     "@angular/compiler-cli": "~7.2.2",
     "@angular/language-service": "~7.2.2",
     "@ionic/angular-toolkit": "~1.4.0",
-    "@types/node": "~10.12.0",
+    "@ionic/app-scripts": "^3.2.3",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~10.12.0",
     "codelyzer": "~4.5.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
@@ -91,13 +92,14 @@
       "cordova-plugin-x-socialsharing": {},
       "cordova-sqlite-storage": {},
       "cordova-plugin-googleplus": {
-        "REVERSED_CLIENT_ID": "com.googleusercontent.apps.19092762993-0u1lq9q5b2d4f3t14n8psvecc83p6kn5"
+        "REVERSED_CLIENT_ID": "com.googleusercontent.apps.19092762993-gjvi2n1u9tiept9e1rk18dqfeuafu6qr"
       },
       "cordova-plugin-email-composer": {},
       "cordova-plugin-nativestorage": {}
     },
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   }
 }

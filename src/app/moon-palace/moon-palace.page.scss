@@ -7,11 +7,15 @@ ion-card{
   background-color: var(--ion-color-light) !important;
 }
 
+
 .slide{
-  width:100%;
-  height:60vw;
+  width:60%;
+  height:40vw;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.texto-punto{
+  font-family: Gill Sans;
 }
 
 .slide-custom{

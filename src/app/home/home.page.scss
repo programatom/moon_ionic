@@ -60,7 +60,7 @@
 }
 
 .icono-globe-sports{
-  font-size:15vw;
+  font-size:12vw;
 
 }
 
@@ -101,13 +101,19 @@
   text-align: center;
 }
 
-
+.bullet-icono{
+  font-size: 2vw;
+}
 
 .linea-divisoria{
   background: var(--ion-color-azul-oscuro) !important;
   width:100%;
   height:0.2vw;
   margin-top: 8px
+}
+
+.ld-gris{
+  background: var(--ion-color-light-shade) !important;
 }
 
 ion-avatar{
@@ -120,7 +126,7 @@ ion-avatar{
 }
 
 .logo-moon-sports{
-  height: 13vw;
+  height: 9vw;
   width:auto;
   margin-left: 1vw;
 }

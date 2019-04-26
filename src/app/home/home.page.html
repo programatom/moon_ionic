@@ -8,7 +8,6 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-
   <ion-grid no-padding align-items-center>
     <ion-row>
       <ion-col size="12" style="padding-top:6vw;padding-bottom:2vw">
@@ -143,14 +142,19 @@
         </div>
       </ion-col>
     </ion-row>
-    <ion-row>
+    <ion-row text-center>
       <ion-col size="12" class="col-secundaria">
         <div class="portada-3">
           <ion-row>
             <ion-col size="12">
               <img src="assets/imgs/home/moonsports.png" class="logo-moon-sports">
             </ion-col>
-            <ion-col size="12">
+            <ion-col size="12" no-padding>
+              <div class="texto-moon-cancun">
+                <strong>MOON</strong><i>Sports</i>
+              </div>
+            </ion-col>
+            <ion-col size="12" no-padding>
               <ion-icon name="ios-globe" color="light" class="icono-globe-sports">
               </ion-icon>
             </ion-col>
@@ -182,16 +186,16 @@
     <ion-card-content>
       <ion-row>
         <ion-col size="12">
-          <ion-card-title color="dark" style="font-size:5vw">
+          <ion-card-title color="dark" style="font-size:5vw;margin-bottom:4vw">
             Somos la empresa con mas experiencia en viajes al exterior
           </ion-card-title>
         </ion-col>
       </ion-row>
       <ion-row>
-        <ion-col size="2" class="row-card icono-inicial-bullet-card">
-          <ion-icon src="assets/iconos/circular-shape-silhouette.svg" color="secondary"></ion-icon>
+        <ion-col size="1" class="row-card icono-inicial-bullet-card">
+          <ion-icon src="assets/iconos/circular-shape-silhouette.svg" class="bullet-icono" color="secondary"></ion-icon>
         </ion-col>
-        <ion-col size="7" class="texto-bullet-card row-card">
+        <ion-col size="8" class="texto-bullet-card">
           Más de 23 años de experiencia
         </ion-col>
         <ion-col size="3" class="icono-bullet-card row-card">
@@ -199,10 +203,10 @@
         </ion-col>
       </ion-row>
       <ion-row>
-        <ion-col size="2" class="row-card icono-inicial-bullet-card">
-          <ion-icon src="assets/iconos/circular-shape-silhouette.svg" color="secondary"></ion-icon>
+        <ion-col size="1" class="row-card icono-inicial-bullet-card">
+          <ion-icon src="assets/iconos/circular-shape-silhouette.svg" class="bullet-icono" color="secondary"></ion-icon>
         </ion-col>
-        <ion-col size="7" class="texto-bullet-card row-card">
+        <ion-col size="8" class="texto-bullet-card">
           Más de 80.000 esquiadores
         </ion-col>
         <ion-col size="3" class="icono-bullet-card row-card">
@@ -210,38 +214,50 @@
         </ion-col>
       </ion-row>
       <ion-row>
-        <ion-col size="2" class="row-card icono-inicial-bullet-card">
-          <ion-icon src="assets/iconos/circular-shape-silhouette.svg" color="secondary"></ion-icon>
+        <ion-col size="1" class="row-card icono-inicial-bullet-card">
+          <ion-icon src="assets/iconos/circular-shape-silhouette.svg" class="bullet-icono" color="secondary"></ion-icon>
         </ion-col>
-        <ion-col size="7" class="texto-bullet-card row-card">
+        <ion-col size="8" class="texto-bullet-card">
           Más de 1000 viajes de egresados
         </ion-col>
         <ion-col size="3" class="icono-bullet-card row-card">
-          <ion-icon src="assets/iconos/airplane.svg"></ion-icon>
-          <ion-icon src="assets/iconos/earth.svg"></ion-icon>
+          <ion-row>
+            <ion-col size="6">
+              <ion-icon src="assets/iconos/airplane.svg"></ion-icon>
+            </ion-col>
+            <ion-col size="6">
+              <ion-icon src="assets/iconos/earth.svg"></ion-icon>
+            </ion-col>
+          </ion-row>
         </ion-col>
       </ion-row>
       <ion-row>
-        <ion-col size="2" class="row-card icono-inicial-bullet-card">
-          <ion-icon src="assets/iconos/circular-shape-silhouette.svg" color="secondary"></ion-icon>
+        <ion-col size="1" class="row-card icono-inicial-bullet-card">
+          <ion-icon src="assets/iconos/circular-shape-silhouette.svg" class="bullet-icono" color="secondary"></ion-icon>
         </ion-col>
-        <ion-col size="7" class="texto-bullet-card row-card">
+        <ion-col size="8" class="texto-bullet-card">
           Más de 180.000 pasajeros transportados
         </ion-col>
         <ion-col size="3" class="icono-bullet-card row-card">
-          <ion-icon name="contacts"></ion-icon>
+          <ion-icon name="contacts" style="display:inline-block"></ion-icon>
         </ion-col>
       </ion-row>
       <ion-row>
-        <ion-col size="2" class="row-card icono-inicial-bullet-card">
-          <ion-icon src="assets/iconos/circular-shape-silhouette.svg" color="secondary"></ion-icon>
+        <ion-col size="1" class="row-card icono-inicial-bullet-card">
+          <ion-icon src="assets/iconos/circular-shape-silhouette.svg" class="bullet-icono" color="secondary"></ion-icon>
         </ion-col>
-        <ion-col size="7" class="texto-bullet-card row-card">
+        <ion-col size="8" class="texto-bullet-card">
           Más de 100 giras de rugby y hockey
         </ion-col>
         <ion-col size="3" class="icono-bullet-card row-card">
-          <ion-icon src="assets/iconos/american-football-ball.svg"></ion-icon>
-          <ion-icon src="assets/iconos/hockey-sticks.svg"></ion-icon>
+          <ion-row>
+            <ion-col size="6">
+              <ion-icon src="assets/iconos/american-football-ball.svg"></ion-icon>
+            </ion-col>
+            <ion-col size="6">
+              <ion-icon src="assets/iconos/hockey-sticks.svg"></ion-icon>
+            </ion-col>
+          </ion-row>
         </ion-col>
       </ion-row>
 
@@ -261,7 +277,7 @@
 
   <ion-row>
     <ion-col size="12">
-      <div class="linea-divisoria" >
+      <div class="linea-divisoria ld-gris">
       </div>
     </ion-col>
   </ion-row>
@@ -278,6 +294,7 @@
     </ion-col>
   </ion-row>
   <br>
+  <!--
   <ion-row>
     <ion-col size="12">
       <div class="linea-divisoria" >
@@ -405,8 +422,8 @@
 
   </ion-grid>
 
-
   <br>
+-->
   <ion-row align-items-center justify-content-center>
     <ion-col size="12" text-center>
       <ion-text color="azul-oscuro" style="font-weight: lighter !important; letter-spacing: 300">

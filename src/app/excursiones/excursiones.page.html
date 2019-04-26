@@ -10,6 +10,14 @@
 
 <ion-content>
 
+  <div class="row">
+    <div class="col-12">
+      <ion-img src="assets/imgs/fiestas/moon-exclusive.png">
+
+      </ion-img>
+    </div>
+  </div>
+
 <br>
     <div class="row">
       <div class="col-12">
@@ -21,10 +29,21 @@
     <div class="linea-divisoria" style="width:90%; margin-left: 5%">
     </div>
 
+
+  <div class="linea-divisoria ld-gris" style="height:0.15vw;width:90%;margin-left:5%">
+  </div>
+    <div style="padding-top:1.3vw"  *ngFor="let excursion of excursiones">
+      <app-boton-excursiones-fiestas [url_foto]="excursion.url_foto" [titulo]="excursion.titulo" (click)="irAPortadaTexto(excursion.media,excursion.titulo, excursion.descripcion, excursion.mediaType)">
+      </app-boton-excursiones-fiestas>
+      <div class="linea-divisoria ld-gris" style="height:0.15vw;width:90%;margin-left:5%">
+      </div>
+    </div>
+
+  <br>
   <ion-grid align-items-center style="padding-left:3vw;padding-right:3vw">
     <ion-row>
       <ion-col size="12">
-        <div class="moon-title-primary" style="font-size:5vw; text-align:justify">
+        <div class="moon-title-primary" style="font-size:4.5vw; text-align:justify">
           Todas las excursiones serán acompañadas por el mejor all-inclusive.
           Las salidas se realizarán en el barco exclusivo de moon partiendo desde el muelle privado del <strong>MOON PALACE</strong>.
           Los chicos no tendrán que llevar plata a no ser que el coordinador les informe.
@@ -32,16 +51,7 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-    <div class="linea-divisoria" style="height:0.15vw;">
-    </div>
-    <div style="padding-top:1.3vw"  *ngFor="let excursion of excursiones">
-      <app-boton-excursiones-fiestas [url_foto]="excursion.url_foto" [titulo]="excursion.titulo" (click)="irAPortadaTexto(excursion.media,excursion.titulo, excursion.descripcion, excursion.mediaType)">
-      </app-boton-excursiones-fiestas>
-      <div class="linea-divisoria" style="height:0.15vw;">
-      </div>
-    </div>
-
-  <br>
+  <br><br>
 
   <ion-row align-items-center justify-content-center>
     <ion-col size="6">

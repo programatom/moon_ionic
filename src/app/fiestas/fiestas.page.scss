@@ -11,7 +11,9 @@
 ion-col{
   padding:0;
 }
-
+.ld-gris{
+  background: var(--ion-color-light-shade) !important;
+}
 .text-custom{
   position: absolute;
   bottom: 11vw;

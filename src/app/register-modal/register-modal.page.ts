@@ -132,7 +132,7 @@ export class RegisterModalPage implements OnInit {
 
   googleRegister(): void {
     this.googlePlus.login({
-      'webClientId': '19092762993-oq3aegga0bo65r4i3ej0rig5p8nfi1o9.apps.googleusercontent.com',
+      'webClientId': '19092762993-gjvi2n1u9tiept9e1rk18dqfeuafu6qr.apps.googleusercontent.com',
       'offline': true
     }).then(res => {
       console.log(JSON.stringify(res));

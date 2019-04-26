@@ -25,7 +25,12 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(108,146,194,0.35) !important;
+  border-radius: 40vw 40vw 0 0;
 }
+
+
+
+
 ion-toolbar {
   background-image: linear-gradient(to bottom, var(--ion-color-primary), var(--ion-color-secondary)) !important;
   display: flex;
@@ -142,12 +147,12 @@ ion-label {
 }
 
 .row-card {
-  display: flex!important;
-  align-items: center!important;
+  text-align: center;
 }
 
 .texto-bullet-card {
   color:var(--ion-color-medium-shade);
+  font-size: 4vw;
 }
 
 .icono-bullet-card {
@@ -234,4 +239,29 @@ ion-label {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }

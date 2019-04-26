@@ -9,8 +9,6 @@
 </ion-header>
 <ion-content>
 
-  <br>
-
   <div class="row">
     <div class="col-12">
       <ion-img src="assets/imgs/fiestas/moon-exclusive.png">
@@ -32,7 +30,7 @@
   <br>
 
 
-
+<!--
 
   <ion-grid align-items-center>
     <ion-row>
@@ -42,11 +40,11 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-
+-->
   <div style="padding-top:1.3vw"  *ngFor="let fiesta of fiestas">
     <app-boton-excursiones-fiestas [url_foto]="fiesta.url_foto" [titulo]="fiesta.titulo" (click)="irAPortadaTexto(fiesta.media,fiesta.titulo,fiesta.descripcion,fiesta.mediaType)">
     </app-boton-excursiones-fiestas>
-    <div class="linea-divisoria" style="height:0.15vw;">
+    <div class="linea-divisoria ld-gris" style="height:0.15vw;width:90%;margin-left:5%">
     </div>
   </div>
 
