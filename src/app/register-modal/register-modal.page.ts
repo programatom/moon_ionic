@@ -175,7 +175,10 @@ export class RegisterModalPage implements OnInit {
       (err)=>{
         console.log(err);
         this.toggleSplash();
-        this.toastServ.presentToast("Ocurrió algún error con nuestros servidores! Vuelva a intentar registrarse en otro momento!")
+        this.toastServ.presentToast("Ocurrió algún error con nuestros servidores! Vuelva a intentar registrarse en otro momento!");
+        this.navCtrl.navigateForward("/tabs/home").then(() => {
+          this.modalCtrl.dismiss();
+        });
       }
     });
   }
