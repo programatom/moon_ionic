@@ -74,6 +74,10 @@ export class HomePage implements OnInit {
     })
   }
 
+  iabUrl(url){
+    this.browser.openUrlPlugin(url);
+  }
+
   countdownFN(){
     let cancun = "09/20/2019";
     let hoy = new Date();

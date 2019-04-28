@@ -26,7 +26,7 @@
       <iframe width="100%" height="315" [src]="trustedVideoUrl" frameborder="0" allowfullscreen *ngIf="portadaServ.mediaType == 'video'"></iframe>
     </ion-col>
   </ion-row>
-  <ion-grid>
+  <ion-grid *ngIf="portadaServ.descripcion != ''">
     <ion-row align-items-center>
       <ion-col size="12" >
         <ion-card style="text-align:justify">

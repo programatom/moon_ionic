@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { PortadaTextoService } from '../services/services.index';
 import { NotificacionesService } from '../services/notificaciones.service';
+import { BrowserService } from '../services/browser.service';
 
 @Component({
   selector: 'app-excursiones',
@@ -54,7 +55,8 @@ export class ExcursionesPage implements OnInit {
   }]
   constructor(private navCtrl: NavController,
               private portadaServ: PortadaTextoService,
-              private notificacionesServ: NotificacionesService) { }
+              private notificacionesServ: NotificacionesService,
+              public browser: BrowserService) { }
 
   ngOnInit() {
   }

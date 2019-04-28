@@ -22,16 +22,16 @@
     <div class="row">
       <div class="col-12">
         <div class="moon-title-primary">
-          <strong>EXCUR</strong>SIONES
+          <strong>Excur</strong>siones
         </div>
       </div>
     </div>
     <div class="linea-divisoria" style="width:90%; margin-left: 5%">
     </div>
+    <br>
 
 
-  <div class="linea-divisoria ld-gris" style="height:0.15vw;width:90%;margin-left:5%">
-  </div>
+
     <div style="padding-top:1.3vw"  *ngFor="let excursion of excursiones">
       <app-boton-excursiones-fiestas [url_foto]="excursion.url_foto" [titulo]="excursion.titulo" (click)="irAPortadaTexto(excursion.media,excursion.titulo, excursion.descripcion, excursion.mediaType)">
       </app-boton-excursiones-fiestas>
@@ -42,7 +42,7 @@
   <br>
   <ion-grid align-items-center style="padding-left:3vw;padding-right:3vw">
     <ion-row>
-      <ion-col size="12">
+      <ion-col size="12" style="padding-left:2vw;padding-right:2vw">
         <div class="moon-title-primary" style="font-size:4.5vw; text-align:justify">
           Todas las excursiones serán acompañadas por el mejor all-inclusive.
           Las salidas se realizarán en el barco exclusivo de moon partiendo desde el muelle privado del <strong>MOON PALACE</strong>.

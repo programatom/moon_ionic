@@ -51,10 +51,9 @@ export class ContactoPage implements OnInit {
   }
 
   irAWhatsapp() {
-    this.browser.openUrlPlugin("https://api.whatsapp.com/send?phone=5491140244052&text=&source=&data=");
+    let numeroDeTelefono = "5491140244052";
+    this.browser.openUrlPlugin("https://api.whatsapp.com/send?phone=" + numeroDeTelefono + "&text=&source=&data=");
   }
-  test() {
-    this.browser.openUrlPlugin("https://api.whatsapp.com/send?phone=5491140244052&text=&source=&data=");
-  }
+
 
 }

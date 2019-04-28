@@ -12,9 +12,15 @@ export class BrowserService {
 
   }
 
-  openUrlPlugin(url){
+  openUrlPlugin(url, type?){
+
+    if(type == "web"){
+      let options = "toolbarcolor=#6c92c2,closebuttoncaption=Volver";
+      this.iab.create(url, '_blank', options);
+      return;
+    }
+
     let isIos = this.plt.is("ios");
-    //let options = "toolbarcolor=#6c92c2,closebuttoncaption=Volver";
     if(url == "facebook"){
       url = "fb://profile/355679121210127"
     }else if(url == "instagram"){
